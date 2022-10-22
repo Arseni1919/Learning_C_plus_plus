@@ -1,23 +1,11 @@
 #include <iostream>
 
 int main() {
-    int a = 10;
-    int b = 3;
-    int prev_a = a;
-    a = b;
-    b = prev_a;
-    std::cout << a << std::endl;
-    std::cout << b << std::endl;
-
-    int z = a % b;
-    std::cout << z << std::endl;
-    ++z;
-    std::cout << z << std::endl;
-    // This is comment
-    /*
-     *
-     *
-     *
-     * */
+    double sales = 95000;
+    const float t1 = .04;
+    double s1 = sales * t1;
+    double s2 = sales * .02;
+    double z = sales - s1 - s2;
+    std::cout << z;
     return 0;
 };
