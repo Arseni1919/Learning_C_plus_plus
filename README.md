@@ -181,6 +181,99 @@ double plusFunc(double x, double y) {
 }
 ```
 
+## C++ Classes
+
+```c++
+class MyClass {       // The class
+  public:             // Access specifier
+    int myNum;        // Attribute (int variable)
+    string myString;  // Attribute (string variable)
+};
+
+int main() {
+  MyClass myObj;  // Create an object of MyClass
+
+  // Access attributes and set values
+  myObj.myNum = 15; 
+  myObj.myString = "Some text";
+
+  // Print attribute values
+  cout << myObj.myNum << "\n";
+  cout << myObj.myString;
+  return 0;
+}
+```
+
+```c++
+#include <iostream>
+using namespace std;
+
+class Car {
+  public:
+    int speed(int maxSpeed);
+};
+
+int Car::speed(int maxSpeed) {
+  return maxSpeed;
+}
+
+int main() {
+  Car myObj; // Create an object of Car
+  cout << myObj.speed(200); // Call the method with an argument
+  return 0;
+}
+```
+
+### Constructor
+
+```c++
+class MyClass {     // The class
+  public:           // Access specifier
+    MyClass() {     // Constructor
+      cout << "Hello World!";
+    }
+};
+
+int main() {
+  MyClass myObj;    // Create an object of MyClass (this will call the constructor)
+  return 0;
+}
+```
+
+Note: The constructor has the same name as the class, it is always public, and it does not have any return value.
+
+### C++ Access Specifiers
+
+In C++, there are three access specifiers:
+
+- public - members are accessible from outside the class
+- private - members cannot be accessed (or viewed) from outside the class
+- protected - members cannot be accessed from outside the class, however, they can be accessed in inherited classes. You will learn more about Inheritance later.
+
+
+```c++
+class MyClass {
+  public:    // Public access specifier
+    int x;   // Public attribute
+  private:   // Private access specifier
+    int y;   // Private attribute
+};
+
+int main() {
+  MyClass myObj;
+  myObj.x = 25;  // Allowed (public)
+  myObj.y = 50;  // Not allowed (private)
+  return 0;
+}
+```
+
+
+
+
+
+
+
+
 ## Tricks
 
 ```c++

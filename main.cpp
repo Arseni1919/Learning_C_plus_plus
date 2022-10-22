@@ -2,15 +2,14 @@
 #include <cmath>
 using namespace std;
 
-int main() {
-    string food = "Pizza";  // Variable declaration
-    string* ptr = &food;    // Pointer declaration
-
-// Reference: Output the memory address of food with the pointer (0x6dfed4)
-    cout << ptr << "\n";
-
-// Dereference: Output the value of food with the pointer (Pizza)
-    cout << *ptr << "\n";
-
-    return 0;
+class MyClass {     // The class
+public:           // Access specifier
+    MyClass() {     // Constructor
+        cout << "Hello World!";
+    }
 };
+
+int main() {
+    MyClass myObj;    // Create an object of MyClass (this will call the constructor)
+    return 0;
+}
