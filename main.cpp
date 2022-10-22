@@ -1,11 +1,16 @@
 #include <iostream>
+#include <cmath>
+using namespace std;
 
 int main() {
-    double sales = 95000;
-    const float t1 = .04;
-    double s1 = sales * t1;
-    double s2 = sales * .02;
-    double z = sales - s1 - s2;
-    std::cout << z;
+    string food = "Pizza";  // Variable declaration
+    string* ptr = &food;    // Pointer declaration
+
+// Reference: Output the memory address of food with the pointer (0x6dfed4)
+    cout << ptr << "\n";
+
+// Dereference: Output the value of food with the pointer (Pizza)
+    cout << *ptr << "\n";
+
     return 0;
 };
