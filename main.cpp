@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <torch/torch.h>
 using namespace std;
 
 class MyClass {     // The class

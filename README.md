@@ -409,30 +409,6 @@ for (int i = 0; i < sizeof(cars) / sizeof(string); i++) {
 }
 ```
 
-```c++
-
-```
-
-```c++
-
-```
-
-```c++
-
-```
-
-```c++
-
-```
-
-```c++
-
-```
-
-```c++
-
-```
-
 
 ## Credits
 
@@ -441,7 +417,6 @@ for (int i = 0; i < sizeof(cars) / sizeof(string); i++) {
 - [youtube | C++ Tutorial for Beginners - Learn C++ in 1 Hour](https://www.youtube.com/watch?v=ZzaPdXTrSb8&ab_channel=ProgrammingwithMosh)
 - [w3schools | C++ Tutorial](https://www.w3schools.com/cpp/)
 - [pytorch | cpp](https://pytorch.org/cppdocs/frontend.html)
-- []()
 
 
 
